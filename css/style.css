@@ -77,12 +77,7 @@ font-family: 'Raleway', sans-serif;
 
 .inner {
     background: #EFF0F2;
-    background-repeat: no-repeat;
-    background-image: url("../images/bg_2.png");
-    background-position: calc(70% + 500px) center;
-    -webkit-background-size: 17%;
-    background-size: 17%;
-
+    
     width: 100%;
     min-height: 100vh;
     text-align: center;
@@ -155,8 +150,9 @@ font-family: 'Raleway', sans-serif;
 }
 
 .about__subtitle {
-    font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .about__subtitle a {
@@ -201,9 +197,9 @@ font-family: 'Raleway', sans-serif;
     margin-bottom: 50px;
     font-family: 'Comfortaa', cursive;
 
-    font-size: 16px;
+    font-size: 18px;
     max-width: 440px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .about__text snap {
