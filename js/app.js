@@ -6,7 +6,7 @@ $(function() {
         let DowOff = $(blockDowId).offset().top;
 
         $("html, body").animate({
-            scrollTop: DowOff-300
+            scrollTop: DowOff-600
         });
     });
 });
