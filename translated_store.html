@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;500&family=Comfortaa:wght@400;600&family=M+PLUS+Rounded+1c:wght@400;700&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UAutoTranslate</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body class="dark">
+
+<div class="container">
+    <header class="header">
+
+    <div class="header__logo">U<snap>A</snap>uto<snap>T</snap>ranslate</div>
+    <div class="header__menu"><a href="./index.html">Головна</a></div>
+
+    </header>
+</div>
+
+
+
+
+<section>
+    <ul>
+        <li class="list active" data-filter="all"><b>Усі</b></li>
+        <li class="list" data-filter="ukr-ers"><b>Українізатори</b></li>
+        <li class="list" data-filter="gs_in_Uk"><b>Ігри</b></li>
+        <li class="list" data-filter="ps_in_Uk"><b>Програми</b></li>
+        <li class="list" data-filter="online"><b>Онлайн</b></li>
+    </ul>
+    <div class="product">
+
+        <div class="itemBox gs_in_Uk online">
+            <a href="translated_store/tricky_towers.html"><img src="images/tr/tricky_towers_logo.png"></a>
+            <b>Tricky Towers</b>
+        </div>
+        <div class="itemBox gs_in_Uk ukr-ers">
+            <img src="images/tr/mortal_shell_logo.png">
+            <b>Mortal Shell</b>
+        </div>
+        <div class="itemBox ps_in_Uk ukr-ers">
+            <img src="images/tr/shadowplay_logo.png">
+            <b>ShadowPlay</b>
+        </div>
+        <div class="itemBox online ps_in_Uk ukr-ers">
+            <img src="images/tr/ubisoftconnect_logo.png">
+            <b>UbisoftConnect</b>
+        </div>
+        <div class="itemBox ukr-ers ps_in_Uk">
+            <img src="images/tr/geforce_experience_logo.png">
+            <b>GeForce Experience</b>
+        </div>
+        <div class="itemBox ukr-ers gs_in_Uk">
+            <img src="images/tr/scrap_mechanic_logo.png">
+            <b>ScrapMechanic</b>
+        </div>
+        <div class="itemBox ukr-ers ps_in_Uk">
+            <img src="images/tr/rtx_voice_logo.png">
+            <b>RTX Voice</b>
+        </div>
+        <div class="itemBox ukr-ers ps_in_Uk">
+            <img src="images/tr/droidcam_client_logo.png">
+            <b>DroidCam Client</b>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<footer class="footer">
+<div class="container">
+    <div class="footer__inner">
+
+        <div class="footer__col footer__col--f">
+                <div class="footer__title">Відкритий код</div>
+                <div class="footer__text">UAutoTranslate має відкритий серцевий код, тож і ви теж зможете запропонувати чи навіть реалізувати нові функції.</div>
+                <a class="footer__btn" href="https://github.com/Bigidan/UAutoTranslate">GitHub</a>
+                <div class="footer__text">А також створити переклад для застосунку чи гри і додати її у пепозиторій нижче</div>
+                <a class="footer__btn" href="https://github.com/Bigidan/LocalizationFileIntoUA">GitHub-переклад</a>
+        </div>
+
+        <div class="footer__col footer__col--s">
+            <div class="footer__title">Слідкуйте</div>
+                <div class="footer__textt">
+
+                    <div class="footer__textr">GitHub</div>
+                    <div class="footer__textr">
+                        <a href="https://github.com/Bigidan/">github.com/Bigidan</a>
+                    </div>
+                    <div class="footer__textr">Telegram</div>
+                    <div class="footer__textr"><a href="https://t.me/PandG_inU">t.me/PandG_inU</a></div>
+                    <div class="footer__textr">YouTube</div>
+                    <div class="footer__textr"><a href="https://www.youtube.com/channel/UCKgdZIbydL0_nUVlzvjTBTA">Bigidan</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+        ˂ ̸ ˃ with 🧡 by Bigidan
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value == 'all'){
+                    $('.itemBox').show('1000')
+                }
+                else{
+                    $('.itemBox').not('.'+value).hide('1000');
+                    $('.itemBox').filter('.'+value).show('1000');
+                }
+            })
+            $('.list').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
+
+
+</body>
+</html>
