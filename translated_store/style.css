@@ -202,7 +202,7 @@ a:any-link {
 
 .download {
     text-align: center;
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .download__title {
@@ -238,7 +238,20 @@ a:any-link {
 
 .download__text {
     font-size: 16px;
-    margin: auto 5%;
+    margin: 10px 5%;
+}
+
+.download__t {
+    margin: 10px 5%;
+    margin-left: 40px;
+
+    text-align: left;
+    font-size: 16px;
+}
+
+.download__textt {
+    font-size: 22px;
+    margin: 10px 5%;
 }
 .download__text b{
     color: #50c3b9;
@@ -252,6 +265,8 @@ a:any-link {
     text-decoration: none;
     color: inherit;
     line-height: 1.5;
+
+    font-size: 18px;
 
     border: solid 2px #454546;
     border-radius: 3px;
@@ -270,7 +285,7 @@ a:any-link {
 }
 
 .download__href:hover {
-    background: #a6b8dd;
+    background: rgba(255, 128, 0, 0.62);
     color: white;
 }
 /* Secon page */
@@ -309,6 +324,7 @@ section ul li {
     transition: transform .2s linear;
 }
 .product .itemBox p{
+    margin-left: 30px;
     text-align: left;
 }
 
@@ -317,13 +333,8 @@ section ul li {
 .footer {
     background: #1d2121;
     color: #fff;
-    background-repeat: no-repeat;
-    background-image: url("../images/bg_2_cent_d.webp");
-    background-position: 100% 80%;
-    -webkit-background-size: 30%;
-    background-size: 30%;
 
-    min-height: 200px;
+    min-height: 140px;
 
 }
 

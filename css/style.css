@@ -358,7 +358,7 @@ section ul li.active {
 }
 .product .itemBox img{
     width: 100%;
-    height: 100%;
+    height: 430px;
     object-fit: cover;
     border-radius: 20px;
     border: solid 0px #000;
